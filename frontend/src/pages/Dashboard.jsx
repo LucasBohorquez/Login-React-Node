@@ -44,6 +44,7 @@ export default function Dashboard() {
 
   return (
     <>
+    <div>
       <h1 className='text-3xl'>Bienvenido al Dashboard, {user.name}</h1>
       <div className='flex gap-10'>
         <Link onClick={handleLogout} to='/Login' className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center'>Cerrar Sesión</Link>
@@ -51,12 +52,8 @@ export default function Dashboard() {
         <Link to='/Delete' className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center'>Borrar la Cuenta</Link>
       </div>
 
-      <div className='border p-2 mt-5 rounded-[8px] w-[300px] justify-items-center'>
-        <h2 className='font-bold'>Usuarios registrados:</h2>
-        {users && users.map((u) => (
-          <p key={u.id}>{u.name}</p>
-        ))}
-      </div>
+      
+        </div>
     </>
   )
 

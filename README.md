@@ -101,4 +101,4 @@ Aplicación desarrollada con React y Node.js que permite:
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 
-# Terminado por primera vez el 30 de Marzo de 2026, de aqui en adelante seguirán mostrandose alguna actualización
+# Terminado por primera vez el 30 de Marzo de 2026, de aqui en adelante seguirá mostrandose alguna actualización
