@@ -49,7 +49,7 @@ export default function Delete() {
             [e.target.name]: e.target.value
         })
     }
-    console.log(DeleteUser)
+    
 
 
     const handleSubmitpin = async (e) => {
