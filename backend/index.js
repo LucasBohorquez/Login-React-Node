@@ -20,7 +20,12 @@ app.use(cors({
         'http://localhost:5173/Login',
         'http://localhost:5173/Register',
         'https://login-react-node-production.up.railway.app/',
-        'https://login-react-node-alpha.vercel.app/'
+        'https://login-react-node-alpha.vercel.app/Login',
+        'https://login-react-node-alpha.vercel.app/Register',
+        'https://login-react-node-alpha.vercel.app/Dashboard',
+        'https://login-react-node-alpha.vercel.app/Update',
+        'https://login-react-node-alpha.vercel.app/Delete',
+        'https://login-react-node-alpha.vercel.app/Recover',
     ]
     if(allowedOrigins.includes(origin)){
         return callback(null, true)
