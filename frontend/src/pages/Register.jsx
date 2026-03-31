@@ -77,8 +77,8 @@ export default function Register() {
                 <p className='text-lg text-center'>Ya has iniciado sesión. Redirigete al Dashboard... O cierra sesión</p>
             </div>
             <div className='flex gap-30 max-sm:flex-col max-sm:gap-20 max-sm:items-center max-md:gap-10 max-lg:gap-10'>
-                <Link to='/Dashboard' className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center'>Ir al Dashboard</Link>
-                <Link onClick={handleLogout} className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center'>Cerrar Sesión</Link>
+                <Link to='/Dashboard' className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center active:bg-gray-700'>Ir al Dashboard</Link>
+                <Link onClick={handleLogout} className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center active:bg-gray-700'>Cerrar Sesión</Link>
             </div>
         </div>
     }
@@ -115,7 +115,7 @@ export default function Register() {
                             <input onChange={handleChange} type="number" maxLength={4} name='pin' id='correo' placeholder='Escribe un pin de 4 digitos' />
                         </div>
 
-                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer' type='submit'>Registrarse</button>
+                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer active:bg-gray-700' type='submit'>Registrarse</button>
                     </form>
                     <p className='max-sm:flex max-sm:flex-col max-sm:gap-3'><span className='max-sm:text-[12px]'>¿Ya tienes una cuenta?</span> <Link to='/Login' className='font-bold cursor-pointer mr-3.5'>Inicia Sesión</Link></p>
                 </div>

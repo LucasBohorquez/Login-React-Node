@@ -38,7 +38,7 @@ export default function Home() {
     return (
         <>
 
-            <div className='flex flex-col items-center gap-30 justify-center h-dvh max-md:text-center max-lg:text-center text-white'>
+            <div className='flex flex-col items-center gap-30 justify-center h-dvh max-md:text-center max-lg:text-center'>
                 <h1 className='text-5xl max-sm:text-4xl max-sm:text-center'>Un placer, escoge que hacer por siguiente</h1>
 
                 <div className='flex text-3xl gap-100 max-sm:flex-col max-sm:gap-20 max-sm:items-center max-md:gap-10 max-lg:gap-10'>

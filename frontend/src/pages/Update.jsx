@@ -97,7 +97,7 @@ export default function Update() {
                             <input onChange={handleChangepin} type="text" maxLength={4} name='pin' id='contraseña' placeholder='Escribe tu pin' />
                         </div>
 
-                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer' type='submit'>Verificar</button>
+                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer active:bg-gray-700' type='submit'>Verificar</button>
 
                     </form>
 
@@ -108,7 +108,7 @@ export default function Update() {
                             <input onChange={handleChange} type="password" readOnly={pinVerified} name='password' id='contraseña' placeholder='Actualiza tu contraseña' />
                         </div>
 
-                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer' type='submit'>Actualizar</button>
+                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer active:bg-gray-700' type='submit'>Actualizar</button>
 
                     </form>
                     <p><Link to='/Dashboard' className='font-bold cursor-pointer'>Ir al Dashboard</Link></p>

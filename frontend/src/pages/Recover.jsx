@@ -123,8 +123,8 @@ export default function Recover() {
                 <p className='text-lg text-center'>Ya has iniciado sesión. Redirigete al Dashboard... O cierra sesión</p>
             </div>
             <div className='flex gap-30 max-sm:flex-col max-sm:gap-20 max-sm:items-center max-md:gap-10 max-lg:gap-10'>
-                <Link to='/Dashboard' className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center'>Ir al Dashboard</Link>
-                <Link onClick={handleLogout} className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center'>Cerrar Sesión</Link>
+                <Link to='/Dashboard' className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center active:bg-gray-700'>Ir al Dashboard</Link>
+                <Link onClick={handleLogout} className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center active:bg-gray-700'>Cerrar Sesión</Link>
             </div>
         </div>
     }
@@ -150,7 +150,7 @@ export default function Recover() {
                             <input onChange={handleChangepin} type="text" maxLength={4} name='pin' id='contraseña' placeholder='Escribe tu pin' />
                         </div>
 
-                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer' type='submit'>Verificar</button>
+                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer active:bg-gray-700' type='submit'>Verificar</button>
 
                     </form>
 
@@ -161,7 +161,7 @@ export default function Recover() {
                             <input onChange={handleChange} type="password" readOnly={pinVerified} name='password' id='contraseña' placeholder='Actualiza tu contraseña' />
                         </div>
 
-                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer' type='submit'>Actualizar</button>
+                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer active:bg-gray-700' type='submit'>Actualizar</button>
 
                     </form>
                     <p><Link to='/Login' className='font-bold cursor-pointer mr-3.5'>Inicia Sesión</Link> <Link to='/Register' className='font-bold cursor-pointer mr-3.5'>Regístrate</Link></p>

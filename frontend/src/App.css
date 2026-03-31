@@ -12,7 +12,6 @@ button{
   transition: background-color 0.1s ease; 
 }
 button:active {
-  @apply bg-gray-700
 }
 .enlace{
   @apply cursor-pointer p-2 rounded-[10px] w-[300px] text-center

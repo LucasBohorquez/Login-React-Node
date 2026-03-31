@@ -86,8 +86,8 @@ export default function Login() {
                 <p className='text-lg text-center'>Ya has iniciado sesión. Redirigete al Dashboard... O cierra sesión</p>
             </div>
             <div className='flex gap-30 max-sm:flex-col max-sm:gap-20 max-sm:items-center max-md:gap-10 max-lg:gap-10'>
-                <Link to='/Dashboard' className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center'>Ir al Dashboard</Link>
-                <Link onClick={handleLogout} className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center'>Cerrar Sesión</Link>
+                <Link to='/Dashboard' className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center active:bg-gray-700'>Ir al Dashboard</Link>
+                <Link onClick={handleLogout} className='border p-2 mt-5 rounded-[8px] w-[200px] bg-black text-white cursor-pointer text-center active:bg-gray-700'>Cerrar Sesión</Link>
             </div>
         </div>
     }
@@ -115,7 +115,7 @@ export default function Login() {
                             </div>
                             <input onChange={handleChange} type="password" name='password' id='contraseña' placeholder='Escribe tu contraseña' />
                         </div>
-                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer' type='submit'>Iniciar Sesion</button>
+                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer active:bg-gray-700' type='submit'>Iniciar Sesion</button>
                     </form>
                     <p className='max-sm:flex max-sm:flex-col max-sm:gap-3'><span className='max-sm:text-[12px]'>¿No tienes una cuenta?</span> <Link to='/Register' className='font-bold cursor-pointer mr-3.5'>Regístrate</Link> <Link className='olvidona2' to='/Recover'>¿Olvidaste tu contraseña?</Link></p>
                 </div>

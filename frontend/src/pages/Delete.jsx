@@ -112,7 +112,7 @@ export default function Delete() {
                             <input onChange={handleChangepin} type="text" maxLength={4} name='pin' id='contraseña' placeholder='Escribe tu pin' />
                         </div>
 
-                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer' type='submit'>Verificar</button>
+                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white cursor-pointer active:bg-gray-700' type='submit'>Verificar</button>
 
                     </form>
 
@@ -125,7 +125,7 @@ export default function Delete() {
                             <input onChange={handleChangedelete} type="text" readOnly={false} name='key' id='contraseña' placeholder='Escribe tu pin' />
                         </div>
 
-                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white text-center cursor-pointer' type='submit'>Borrar la Cuenta</button>
+                        <button className='border rounded-2xl p-2 w-[500px] bg-black text-white text-center cursor-pointer active:bg-gray-700' type='submit'>Borrar la Cuenta</button>
 
                     </form>
 

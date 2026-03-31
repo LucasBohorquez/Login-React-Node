@@ -62,7 +62,7 @@ Aplicación desarrollada con React y Node.js que permite:
 
 /backend
 - cd backend
-- npm server-mysql.js
+- node --watch server-mysql.js
 
 /frontend
 - cd frontend
@@ -102,3 +102,5 @@ Aplicación desarrollada con React y Node.js que permite:
 -------------------------------------------------------------------
 
 # Terminado por primera vez el 30 de Marzo de 2026, de aqui en adelante seguirá mostrandose alguna actualización
+
+- Contador de clicks con intervalo de 10 segundos en frontend/src/pages/Dashboard.jsx 30 de Marzo de 2026
