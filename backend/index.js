@@ -18,7 +18,9 @@ app.use(cors({
         'http://localhost:5173',
         'http://localhost:3000',
         'http://localhost:5173/Login',
-        'http://localhost:5173/Register'
+        'http://localhost:5173/Register',
+        'https://login-react-node-production.up.railway.app/',
+        'https://login-react-node-alpha.vercel.app/'
     ]
     if(allowedOrigins.includes(origin)){
         return callback(null, true)
