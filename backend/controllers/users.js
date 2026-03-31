@@ -80,7 +80,12 @@ export class UserController {
 
     }
     getOut = (req, res) => {
-        res.clearCookie('access_token')
+        res.clearCookie('access_token', {
+            httpOnly: true,
+            secure: true,
+            sameSite: 'none'
+        }
+        )
         res.status(200).json({ message: 'Sesión cerrada exitosamente' })
     }
 
@@ -97,21 +102,21 @@ export class UserController {
 
     }
 
-    recover = async (req,res) =>{
+    recover = async (req, res) => {
         const user = validatePartialUser(req.body)
 
-        if(user.error){
+        if (user.error) {
             return res.status(400).json({ error: JSON.parse(user.error.message) })
         }
-        const recovery = await this.userModel.recovery({ userData: user.data})
-        if(recovery.length === 0){
+        const recovery = await this.userModel.recovery({ userData: user.data })
+        if (recovery.length === 0) {
             return res.status(400).json({ message: 'Credenciales Incorrectas' })
         }
         res.status(200).json({ message: 'Contraseña Actualizada' })
 
     }
 
-    pinReview = async (req, res) =>{
+    pinReview = async (req, res) => {
         const user = validatePartialUser(req.body)
 
         if (user.error) {
