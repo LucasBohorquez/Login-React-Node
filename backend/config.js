@@ -1,5 +1,5 @@
 export const {
-    PORT = 3000,
+    PORT,
     DB_HOST,
     DB_USER,
     DB_PASSWORD,
