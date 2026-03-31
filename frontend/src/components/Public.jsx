@@ -1,4 +1,4 @@
-import { Api } from "../services/api";
+import { Api } from "../services/Api.jsx";
 import { Navigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 

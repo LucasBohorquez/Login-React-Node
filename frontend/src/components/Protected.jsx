@@ -1,6 +1,6 @@
 import { Navigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { Api } from '../services/api'
+import { Api } from '../services/Api.jsx'
 
 const ProtectedRoute = ({ children }) => {
   const [isAuth, setIsAuth] = useState(null)
