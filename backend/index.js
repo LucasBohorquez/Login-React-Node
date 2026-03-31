@@ -16,7 +16,7 @@ app.use(cors({
    origin: (origin, callback) => {
     const allowedOrigins = [
         'http://localhost:5173',
-        'https://login-react-node-alpha.vercel.app/'
+        'https://login-react-node-alpha.vercel.app'
     ]
     if(allowedOrigins.includes(origin)){
         return callback(null, true)
