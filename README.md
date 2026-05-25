@@ -16,7 +16,7 @@ Aplicación desarrollada con React y Node.js que permite:
 
 - React
 - Axios
-- Reac Router
+- React Router
 - TailwindCss
 
 ## BackEnd
@@ -105,3 +105,4 @@ Aplicación desarrollada con React y Node.js que permite:
 
 - Contador de clicks con intervalo de 10 segundos en frontend/src/pages/Dashboard.jsx 30 de Marzo de 2026
 - subida a produccion con railway y vercel
+- Migración npm a pnpm (24/05/2026)

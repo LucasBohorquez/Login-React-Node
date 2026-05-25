@@ -11,6 +11,8 @@ export default function Dashboard() {
   const [jugando, setJugando] = useState(false)
   const [tiempo, setTiempo] = useState(10)
 
+    
+
 
 useEffect(()=>{
   if (!jugando) return
@@ -99,3 +101,4 @@ const iniciarJuego = () =>{
   )
 
 }
+
